@@ -16,6 +16,10 @@
   },
   "author": "gnattu",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gnattu/node-macos-name-uuid.git"
+  },
   "devDependencies": {
     "@neon-rs/cli": "0.1.82"
   },
