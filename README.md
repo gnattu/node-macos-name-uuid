@@ -44,13 +44,11 @@ Additional [`cargo build`](https://doc.rust-lang.org/cargo/commands/cargo-build.
 npm run build -- --feature=beetle
 ```
 
+You can also specify `:x86_64` or `:arm64` to specify target arch.
+
 #### `npm run debug`
 
 Similar to `npm run build` but generates a debug build with `cargo`.
-
-#### `npm run cross`
-
-Similar to `npm run build` but uses [cross-rs](https://github.com/cross-rs/cross) to cross-compile for another platform. Use the [`CARGO_BUILD_TARGET`](https://doc.rust-lang.org/cargo/reference/config.html#buildtarget) environment variable to select the build target.
 
 #### `npm test`
 
