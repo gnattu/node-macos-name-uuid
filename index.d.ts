@@ -1,4 +1,4 @@
-declare module "node-computer-name-id" {
+declare module "node-macos-name-uuid" {
     /**
      * Get the friendly computer name.
      * @returns A string result. Null on failure.

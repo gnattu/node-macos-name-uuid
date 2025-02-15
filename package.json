@@ -12,7 +12,8 @@
     "postcross-build": "neon dist -m /target < cross.log",
     "debug": "npm run cargo-build --",
     "build": "npm run cargo-build -- --release",
-    "cross": "npm run cross-build -- --release"
+    "build:x86_64": "npm run cargo-build -- --release --target x86_64-apple-darwin",
+    "build:aarch64": "npm run cargo-build -- --release --target aarch64-apple-darwin"
   },
   "author": "gnattu",
   "license": "MIT",
