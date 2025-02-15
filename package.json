@@ -1,0 +1,29 @@
+{
+  "name": "node-macos-name-uuid",
+  "version": "1.0.0",
+  "description": "A native Node.js module to get macOS computer name and the hardware UUID",
+  "main": "index.node",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "cargo test",
+    "cargo-build": "cargo build --message-format=json-render-diagnostics > cargo.log",
+    "cross-build": "cross build --message-format=json-render-diagnostics > cross.log",
+    "postcargo-build": "neon dist < cargo.log",
+    "postcross-build": "neon dist -m /target < cross.log",
+    "debug": "npm run cargo-build --",
+    "build": "npm run cargo-build -- --release",
+    "cross": "npm run cross-build -- --release"
+  },
+  "author": "gnattu",
+  "license": "MIT",
+  "devDependencies": {
+    "@neon-rs/cli": "0.1.82"
+  },
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ]
+}
