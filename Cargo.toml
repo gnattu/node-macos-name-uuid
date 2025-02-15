@@ -1,6 +1,6 @@
 [package]
 name = "node-macos-name-uuid"
-version = "1.0.0"
+version = "1.0.1"
 description = "A native Node.js module to get macOS computer name and the hardware UUID"
 license = "MIT"
 edition = "2021"
